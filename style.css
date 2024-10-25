@@ -270,6 +270,108 @@ flex-wrap: wrap;
     width: 40%;
     position: relative;
 }
+.diogrem{
+    text-align: center;
+}
+.diogrem_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3rem 17rem;
+}
+.diogrem_box_left, .diogrem_right{
+    width: 48%;
+    text-align: left;
+}
+.box_left_div_img{
+    padding: 1.5rem;
+    background-color: #F3F9FA;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: left;
+}
+.div_img{
+    width: 40px; height: 40px;
+
+}
+.div_h3{
+    color: #1B0760;
+    font-size: 2.4rem;
+    margin: 2.5rem 0;
+}
+.div_pp{
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.499);
+    line-height: 1.6;
+}
+
+.div_a{
+position: relative;
+margin-top: 3rem;
+font-size: 2rem;
+color: red;
+text-decoration: none;
+font-weight: 700;
+}
+.div_a::after{
+    
+    transition: 0.2s margin-left ;
+    content: "-->";
+    font-size: 3rem;
+    margin-left: .8rem;
+}
+.div_a:hover::after{
+    margin-left: 1.3rem;
+}
+.panel{
+    background-color: black;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 92%);
+    padding: 5rem 12rem 10rem;
+    text-align: center;
+    color: white;
+
+}
+.panel_h2{
+    font-size: 4.3rem;
+}
+.panel_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 3rem;
+}
+.panel_img{
+    width: 55%;
+}
+.panel_box_right{
+width: 42%;
+}
+.panel_box_right_li{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 3rem;
+    text-align: left;
+}
+.li_1{
+    margin-right: 1rem;
+    width: 65px;
+}
+.right_li_right_h2{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.right_li_right_p{
+    font-size: 2rem;
+    line-height: 1.6;
+}
+
+       /* media */
+
+      
+
 @media(max-width:1150px){
     .card_body{
         width: 60%;
@@ -336,16 +438,13 @@ flex-wrap: wrap;
     border-radius: 10px;
     line-height: 1.6;
     font-size: 2.4rem;
-  display: none; 
+    display: none; 
 }
 .div__div:hover .navbar_ul{
     display: block;
 }
 
 }
-
-/* media */
-
 @media(max-width: 750px){
     .box_ul{
         width: 100%;
